@@ -6,6 +6,8 @@ const {
 	defaultRouteController,
 } = require('./controllers')
 
+const PORT = 3005
+
 const server = http.createServer((req, res) => {
 	const url = req.url
 	switch (url) {
@@ -23,4 +25,4 @@ const server = http.createServer((req, res) => {
 	}
 })
 
-server.listen(3005)
+server.listen(PORT)
